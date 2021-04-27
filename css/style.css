@@ -2,6 +2,7 @@
     --black-color: #222222;
     --pink-color: #F1E4E6;
     --lightred-color: #F16D7F;
+    --gray-text-color: #9F9F9F;
 }
 
 body {
@@ -165,9 +166,7 @@ a, a:visited {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #9F9F9F;
-
-
+    color: var(--gray-text-color);
 }
 
 .products__list {
