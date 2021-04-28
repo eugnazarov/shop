@@ -5,6 +5,7 @@
     --lightred-color: #F16D7F;
     --gray-text-color: #9F9F9F;
     --hover-color: rgba(58, 56, 56, .86);
+    --input-bg-color: #E1E1E1;
 
 }
 
@@ -199,6 +200,12 @@ a, a:visited {
     color: var(--lightred-color);
 }
 
+.btn--red:hover {
+    border-color: var(--white-color);
+    color: var(--white-color);
+    background-color: var(--lightred-color);
+}
+
 .products {
     display: flex;
     flex-direction: column;
@@ -252,7 +259,6 @@ a, a:visited {
 }
 
 
-
 .products__item-hover {
 
     display: none;
@@ -276,7 +282,7 @@ a, a:visited {
 
 }
 
-.products__item-button:before{
+.products__item-button:before {
     content: url(../img/cart-icon-hover.svg);
     padding-right: 11px;
 
@@ -328,6 +334,71 @@ a, a:visited {
 
 }
 
+.subscribe__form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe__form {
+    display: flex;
+    margin-top: 32px;
+}
+
+.subscribe__form-input{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    background: var(--input-bg-color);
+    border:none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.subscribe__form-btn{
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border:none;
+    background-color: var(--lightred-color);
+    color: var(--white-color);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.subscribe__form-btn:hover {
+    opacity: .8;
+}
+.subscribe__form-btn:active {
+    transform: scale(0.98)
+}
+
+
+
+.subscribe__form-input::placeholder{
+
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.subscribe__form-title {
+    text-align: center;
+
+}
+
+.subscribe__form-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
+.subscribe__form-heading {
+    font-size: 24px;
+    line-height: 167.2%;
+}
+
 .subscribe::before {
     background: url(../img/subscribe_bg.svg);
     content: "";
@@ -364,15 +435,8 @@ a, a:visited {
     color: #222224
 }
 
-.subscribe__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.subscribe__form-heading {
-    margin-bottom: 32px;
-}
+
 
 .credits {
     background-color: var(--black-color);
