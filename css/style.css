@@ -53,9 +53,13 @@ a, a:visited {
 }
 
 .header__menu-button {
+    cursor: pointer;
     border: none;
     background-color: transparent;
 }
+
+
+
 
 .header__link {
     margin: 0 0 0 33px;
@@ -64,6 +68,90 @@ a, a:visited {
 .header__navigation {
     display: none;
 }
+
+.main {
+    position: relative;
+}
+
+.modal {
+    position: absolute;
+    height: 764px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.modal--open{
+    display: flex;
+}
+
+
+.modal__black {
+flex-grow: 1;
+    background: rgba(0, 0, 0, .5)
+}
+
+.modal__menu {
+    flex-basis: 10%;
+    background: #fff;
+    padding-top: 37px;
+    padding-left: 34px;
+    position: relative;
+}
+
+.modal__menu-exit-btn{
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.modal__menu-title {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.modal__menu-list{
+    display: flex;
+    flex-direction: column;
+}
+.modal__menu-cat{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal__menu-cat-title{
+    align-self: flex-start;
+    color: #F16D7F;
+    text-transform: uppercase;
+
+}
+.modal__menu-cat-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.modal__menu-cat-item{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-bottom: 11px;
+}
+
+.modal__menu-cat-item:last-child{
+    margin-bottom: 0;
+}
+
 
 .brand {
     display: flex;
@@ -346,21 +434,21 @@ a, a:visited {
     margin-top: 32px;
 }
 
-.subscribe__form-input{
+.subscribe__form-input {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 22px;
     background: var(--input-bg-color);
-    border:none;
+    border: none;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 
-.subscribe__form-btn{
+.subscribe__form-btn {
     cursor: pointer;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    border:none;
+    border: none;
     background-color: var(--lightred-color);
     color: var(--white-color);
     padding-right: 20px;
@@ -370,13 +458,13 @@ a, a:visited {
 .subscribe__form-btn:hover {
     opacity: .8;
 }
+
 .subscribe__form-btn:active {
     transform: scale(0.98)
 }
 
 
-
-.subscribe__form-input::placeholder{
+.subscribe__form-input::placeholder {
 
     font-size: 14px;
     line-height: 17px;
@@ -391,7 +479,6 @@ a, a:visited {
     font-size: 18px;
     line-height: 30px;
 }
-
 
 
 .subscribe__form-heading {
@@ -434,8 +521,6 @@ a, a:visited {
     text-align: center;
     color: #222224
 }
-
-
 
 
 .credits {
