@@ -62,8 +62,8 @@ a, a:visited {
     background-color: transparent;
 }
 
-.header__menu-button:hover, .header__link:hover{
-    filter:sepia(100%) hue-rotate(40deg);
+.header__menu-button:hover, .header__link:hover {
+    filter: sepia(100%) hue-rotate(40deg);
 }
 
 
@@ -89,13 +89,13 @@ a, a:visited {
     display: none;
 }
 
-.modal--open{
+.modal--open {
     display: flex;
 }
 
 
 .modal__black {
-flex-grow: 1;
+    flex-grow: 1;
     background: var(--modal-black);
 }
 
@@ -107,14 +107,13 @@ flex-grow: 1;
     position: relative;
 }
 
-.modal__menu-exit-btn{
+.modal__menu-exit-btn {
     position: absolute;
     top: 16px;
     right: 17px;
     background: none;
     border: none;
     cursor: pointer;
-
 }
 
 
@@ -122,11 +121,13 @@ flex-grow: 1;
     text-transform: uppercase;
     margin-bottom: 24px;
 }
-.modal__menu-list{
+
+.modal__menu-list {
     display: flex;
     flex-direction: column;
 }
-.modal__menu-cat{
+
+.modal__menu-cat {
     width: 100px;
     display: flex;
     flex-direction: column;
@@ -135,41 +136,40 @@ flex-grow: 1;
     margin-bottom: 20px;
 }
 
-.modal__menu-cat-title{
+.modal__menu-cat-title {
     align-self: flex-start;
     color: var(--lightred-color);
     text-transform: uppercase;
 
 }
-.modal__menu-cat-list{
+
+.modal__menu-cat-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 12px;
 }
-.modal__menu-cat-item{
+
+.modal__menu-cat-item {
     font-size: 14px;
     line-height: 17px;
     color: var(--gray-text-color);
     margin-bottom: 11px;
 }
 
-.modal__menu-cat-item:last-child{
+.modal__menu-cat-item:last-child {
     margin-bottom: 0;
 }
-
 
 .brand {
     display: flex;
 }
-
 
 .heading {
     font-size: 30px;
     line-height: 36px;
     color: var(--black-color);
     text-align: center;
-
 }
 
 .brand__heading-wrapper {
@@ -178,7 +178,6 @@ flex-grow: 1;
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
-
 }
 
 .brand__heading {
@@ -219,7 +218,6 @@ flex-grow: 1;
     text-transform: uppercase;
 }
 
-
 .stocks__item p {
     font-size: 16px;
     line-height: 19px;
@@ -258,7 +256,6 @@ flex-grow: 1;
 
 .products__heading {
     margin-top: 97px;
-
 }
 
 .products__subtitle {
@@ -286,26 +283,24 @@ flex-grow: 1;
 }
 
 
-
 .btn {
     cursor: pointer;
     border: 1px solid black;
     padding: 14px 38px;
 }
 
-.btn--reg{
+.btn--reg {
     background: var(--lightred-color);
-    border:none;
+    border: none;
     color: var(--white-color);
     text-transform: uppercase;
     margin-top: 40px;
 }
 
-.btn-text-reg:after{
+.btn-text-reg:after {
     content: url("../img/arrow.svg");
     padding-left: 20px;
 }
-
 
 
 .btn--red {
@@ -332,7 +327,6 @@ flex-grow: 1;
     cursor: pointer;
 }
 
-
 .products__item:hover .products__item-hover {
     display: flex;
     justify-content: center;
@@ -340,7 +334,6 @@ flex-grow: 1;
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
 .products__item-heading {
@@ -373,12 +366,10 @@ flex-grow: 1;
 
 
 .products__item-hover {
-
     display: none;
     width: 360px;
     height: 420px;
     background: var(--hover-color);
-
 }
 
 .products__item-button {
@@ -392,13 +383,11 @@ flex-grow: 1;
     font-size: 14px;
     line-height: 17px;
     padding: 13px;
-
 }
 
 .products__item-button:before {
     content: url(../img/cart-icon-hover.svg);
     padding-right: 11px;
-
 }
 
 .features {
@@ -420,7 +409,6 @@ flex-grow: 1;
     width: 360px;
     height: 134px;
     text-align: center;
-
 }
 
 .features__item-heading {
@@ -444,7 +432,6 @@ flex-grow: 1;
     padding-top: 86px;
     position: relative;
     padding-bottom: 126px;
-
 }
 
 .subscribe__form-container {
@@ -490,14 +477,12 @@ flex-grow: 1;
 
 
 .subscribe__form-input::placeholder {
-
     font-size: 14px;
     line-height: 17px;
 }
 
 .subscribe__form-title {
     text-align: center;
-
 }
 
 .subscribe__form-subtitle {
@@ -529,9 +514,7 @@ flex-grow: 1;
     align-items: center;
     height: 225px;
     width: 360px;
-
 }
-
 
 .subscribe__container {
 
@@ -554,7 +537,6 @@ flex-grow: 1;
     color: var(--white-color);
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
 
 .credits__container {
@@ -574,12 +556,12 @@ flex-grow: 1;
 }
 
 
-.page-title{
+.page-title {
     padding: 60px 0;
     background: var(--lightpink-color);
 }
 
-.title{
+.title {
     text-transform: uppercase;
     color: var(--lightred-color);
     font-weight: normal;
@@ -588,7 +570,7 @@ flex-grow: 1;
 }
 
 
-.registration{
+.registration {
     padding-top: 64px;
     padding-bottom: 96px;
     color: var(--black-color);
@@ -596,20 +578,20 @@ flex-grow: 1;
     justify-content: space-between;
 }
 
-.registration__features{
+.registration__features {
     width: 650px;
 }
 
-.registration__features-title{
+.registration__features-title {
     font-weight: normal;
     margin-bottom: 22px;
 }
 
-.registration__form{
+.registration__form {
     margin-right: 128px;
-
 }
-.registration__fieldset{
+
+.registration__fieldset {
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -617,16 +599,16 @@ flex-grow: 1;
     align-items: flex-start;
 }
 
-.registration__fieldset h4{
+.registration__fieldset h4 {
     font-weight: normal;
 }
 
-.registration__fieldset input{
+.registration__fieldset input {
     width: 360px;
     padding: 16px;
 }
 
-.registration__features-subtitle{
+.registration__features-subtitle {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -634,7 +616,7 @@ flex-grow: 1;
 }
 
 
-.registration__features-list{
+.registration__features-list {
     margin-top: 21px;
     display: flex;
     flex-direction: column;
@@ -642,19 +624,21 @@ flex-grow: 1;
     align-items: flex-start;
     font-size: 24px;
     line-height: 29px;
-
 }
 
-.registration__features-item:before{
+.registration__features-item:before {
     margin-right: 23px;
     content: url(../img/feature-icon.svg);
 }
 
-.registration__sex{
+.registration__sex {
     margin: 31px 0;
 }
-
-.registration__text{
+.registration__fieldset-title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.registration__text {
     margin-top: 15px;
     font-size: 13px;
     line-height: 16px;
