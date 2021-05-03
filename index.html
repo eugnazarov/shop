@@ -27,45 +27,75 @@
                                                                    height="23"></button>
             <a class="header__link" href="#"><img src="./img/dashboard_icon.svg" alt=""></a>
             <a class="header__link" href="#"><img src="./img/cart_icon.svg" alt=""></a>
-            <nav class="header__navigation">
-                <h2 class="header__navigation-button">menu</h2>
-                <ul class="header__navigation-list">
-                    <li class="header__navigation-button navigation-button">
-                        <a class="navigation-item__link" href="#">man</a>
-                        <ul class="navigation-item__sublist">
-                            <li><a class="navigation-item__sublist-link" href="#">Accessories</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Bags</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Denim</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">T-Shirts</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__navigation-button navigation-button">
-                        <a class="navigation-item__link" href="#">woman</a>
-                        <ul class="navigation-item__sublist">
-                            <li><a class="navigation-item__sublist-link" href="#">Accessories</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Jackets & Coats</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Polos</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">T-Shirts</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Shirts</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__navigation-button navigation-button">
-                        <a class="navigation-item__link" href="#">KIDS</a>
-                        <ul class="navigation-item__sublist">
-                            <li><a class="navigation-item__sublist-link" href="#">Accessories</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Jackets & Coats</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Polos</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">T-Shirts</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Shirts</a></li>
-                            <li><a class="navigation-item__sublist-link" href="#">Bags</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
 </header>
-<main>
+<main class="main">
+    <div class="modal">
+        <div class="modal__black"></div>
+        <div class="modal__menu">
+
+            <button class="modal__menu-exit-btn">
+                <img class="" src="./img/close-icon.svg" alt="close">
+            </button>
+
+            <h3 class="modal__menu-title">Menu</h3>
+            <ul class="modal__menu-list">
+                <li class="modal__menu-cat">
+                    <h4 class="modal__menu-cat-title">Man</h4>
+                    <ul class="modal__menu-cat-list">
+                        <li class="modal__menu-cat-item">
+                            Accessories
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            Bags
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            Denim
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            T-Shirts
+                        </li>
+                    </ul>
+                </li>
+                <li class="modal__menu-cat">
+                    <h4 class="modal__menu-cat-title">Woman</h4>
+                    <ul class="modal__menu-cat-list">
+                        <li class="modal__menu-cat-item">
+                            Accessories
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            Bags
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            Denim
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            T-Shirts
+                        </li>
+                    </ul>
+                </li>
+                <li class="modal__menu-cat">
+                    <h4 class="modal__menu-cat-title">Kids</h4>
+                    <ul class="modal__menu-cat-list">
+                        <li class="modal__menu-cat-item">
+                            Accessories
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            Bags
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            Denim
+                        </li>
+                        <li class="modal__menu-cat-item">
+                            T-Shirts
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
     <section class="brand">
         <img class="brand__image" src="./img/man.jpg" alt="man" width="800" height="765">
         <div class="brand__heading-wrapper">
@@ -108,7 +138,11 @@
             <p class="products__subtitle">Shop for items based on what we featured in this week</p>
             <ul class="products__list">
                 <li class="products__item">
+                    <div class="products__item-hover">
+                        <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                     <img class="products__item-img" src="./img/product-1.jpg" alt="product-1" width="360" height="420">
+
                     <div class="products__item-desc">
                         <h3 class="products__item-heading">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -116,12 +150,15 @@
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
                         <p class="products__item-text--price">$52.00</p>
-                    </div>
 
-                    <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__item-hover">
+                        <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                     <img class="products__item-img" src="./img/product-2.jpg" alt="product-1" width="360" height="420">
+
                     <div class="products__item-desc">
                         <h3 class="products__item-heading">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -129,12 +166,15 @@
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
                         <p class="products__item-text--price">$52.00</p>
-                    </div>
 
-                    <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__item-hover">
+                        <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                     <img class="products__item-img" src="./img/product-3.jpg" alt="product-1" width="360" height="420">
+
                     <div class="products__item-desc">
                         <h3 class="products__item-heading">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -142,12 +182,15 @@
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
                         <p class="products__item-text--price">$52.00</p>
-                    </div>
 
-                    <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__item-hover">
+                        <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                     <img class="products__item-img" src="./img/product-4.jpg" alt="product-1" width="360" height="420">
+
                     <div class="products__item-desc">
                         <h3 class="products__item-heading">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -155,12 +198,15 @@
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
                         <p class="products__item-text--price">$52.00</p>
-                    </div>
 
-                    <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__item-hover">
+                        <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                     <img class="products__item-img" src="./img/product-5.jpg" alt="product-1" width="360" height="420">
+
                     <div class="products__item-desc">
                         <h3 class="products__item-heading">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -168,12 +214,15 @@
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
                         <p class="products__item-text--price">$52.00</p>
-                    </div>
 
-                    <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__item-hover">
+                        <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                     <img class="products__item-img" src="./img/product-6.jpg" alt="product-1" width="360" height="420">
+
                     <div class="products__item-desc">
                         <h3 class="products__item-heading">ellery x m'o capsule</h3>
                         <p class="products__item-text">Known for her sculptural takes on traditional tailoring,
@@ -181,9 +230,8 @@
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
                         <p class="products__item-text--price">$52.00</p>
-                    </div>
 
-                    <button type="button" class="products__item-button">Add to Cart</button>
+                    </div>
                 </li>
 
             </ul>
@@ -231,12 +279,14 @@
                         “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum</i>“
                     </p>
                 </article>
-                <div class="subscribe__form">
-                    <h3 class="subscribe__form-heading">SUBSCRIBE</h3>
-                    <p>FOR OUR NEWSLETTER AND PROMOTION</p>
-                    <form id="subscribe" action="submit">
-                        <input type="email" placeholder="Enter Your Email">
-                        <button type="submit">Subscribe</button>
+                <div class="subscribe__form-container">
+                    <div class="subscribe__form-title">
+                        <h3 class="subscribe__form-heading">SUBSCRIBE</h3>
+                        <p class="subscribe__form-subtitle">FOR OUR NEWSLETTER AND PROMOTION</p>
+                    </div>
+                    <form class="subscribe__form" id="subscribe" action="submit">
+                        <input class="subscribe__form-input" type="email" placeholder="Enter Your Email">
+                        <button class="subscribe__form-btn" type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -249,14 +299,19 @@
                 &copy 2021 Brand All Rights Reserved.
             </p>
             <ul class="socials">
-                <li class="socials__icon"><a href=""><img src="img/facebook.svg" alt="facebook" width="32" height="32"></a></li>
-                <li class="socials__icon"><a href=""><img src="img/instagram.svg" alt="instagram" width="32" height="32"></a></li>
-                <li class="socials__icon"><a href=""><img src="img/pinterest.svg" alt="pinterest" width="32" height="32"></a></li>
-                <li class="socials__icon"><a href=""><img src="img/twitter.svg" alt="twitter" width="32" height="32"></a></li>
+                <li class="socials__icon"><a href=""><img src="img/facebook.svg" alt="facebook" width="32" height="32"></a>
+                </li>
+                <li class="socials__icon"><a href=""><img src="img/instagram.svg" alt="instagram" width="32"
+                                                          height="32"></a></li>
+                <li class="socials__icon"><a href=""><img src="img/pinterest.svg" alt="pinterest" width="32"
+                                                          height="32"></a></li>
+                <li class="socials__icon"><a href=""><img src="img/twitter.svg" alt="twitter" width="32"
+                                                          height="32"></a></li>
             </ul>
         </div>
     </section>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
