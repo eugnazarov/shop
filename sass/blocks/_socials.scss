@@ -1,0 +1,9 @@
+.socials {
+    display: flex;
+
+    &__icon {
+        background-color: $white-color;
+        margin-right: 8px;
+        padding: 8px;
+    }
+}
