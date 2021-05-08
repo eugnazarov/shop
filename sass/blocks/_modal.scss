@@ -45,37 +45,29 @@
 
   &__menu-cat {
     width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-column-space-between();
     margin-bottom: 20px;
   }
 
   &__menu-cat-title {
     align-self: flex-start;
-    color: var(--lightred-color);
+    color: $lightred-color;
     text-transform: uppercase;
   }
 
   &__menu-cat-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-column-space-between();
     padding-top: 12px;
   }
-
 
   &__menu-cat-item {
     font-size: 14px;
     line-height: 17px;
-    color: var(--gray-text-color);
+    color: $gray-text-color;
     margin-bottom: 11px;
   }
 
   &__menu-cat-item:last-child {
     margin-bottom: 0;
   }
-
-
 }
