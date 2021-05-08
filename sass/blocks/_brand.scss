@@ -3,23 +3,17 @@
   justify-content: stretch;
   height: 765px;
 
-
-
   &__heading-wrapper {
     background-color: $pink-color;
     padding: 0 0 0 92px;
-    display: flex;
-    align-items: center;
+    @include flex-center-space-between();
     width: 50%;
   }
 
-&__image{
-width: 50%;
-height: auto;
-}
-
-
-
+  &__image {
+    width: 50%;
+    height: auto;
+  }
 
   &__heading {
     font-size: 48px;
@@ -31,13 +25,10 @@ height: auto;
   }
 
   &__heading-text {
-    font-size: 37px;
-    font-weight: 700;
-    line-height: 44px;
+    @include font(37px, 44px, 700);
   }
 
   &__heading-text--pink {
     color: $lightred-color;
   }
-
 }

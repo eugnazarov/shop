@@ -1,0 +1,10 @@
+.credits {
+    background-color: $black-color;
+    color: $white-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__container {
+        @include flex-center-space-between();
+    }
+}
