@@ -64,8 +64,8 @@
         line-height: 167.2%;
     }
 
-    .subscribe::before {
-        background: url(../img/subscribe_bg.svg);
+    &::before {
+        background: url(../../img/subscribe_bg.svg);
         content: "";
         position: absolute;
         top: 0;
