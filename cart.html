@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <title>Cart</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+
+            <div>
+                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <img class="header__loupe" src="./img/loupe.svg" alt="loupe" width="26" height="27">
+            </div>
+
+            <div>
+                <button class="header__menu-button" type="button"><img src="./img/burger.svg" alt="burger" width="32"
+                        height="23"></button>
+                <a class="header__link" href="#"><img src="./img/dashboard_icon.svg" alt=""></a>
+                <a class="header__link" href="#"><img src="./img/cart_icon.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="modal">
+            <div class="modal__black"></div>
+            <div class="modal__menu">
+
+                <button class="modal__menu-exit-btn">
+                    <img class="" src="./img/close-icon.svg" alt="close">
+                </button>
+
+                <h3 class="modal__menu-title">Menu</h3>
+                <ul class="modal__menu-list">
+                    <li class="modal__menu-cat">
+                        <h4 class="modal__menu-cat-title">Man</h4>
+                        <ul class="modal__menu-cat-list">
+                            <li class="modal__menu-cat-item">
+                                Accessories
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                Bags
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                Denim
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                T-Shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="modal__menu-cat">
+                        <h4 class="modal__menu-cat-title">Woman</h4>
+                        <ul class="modal__menu-cat-list">
+                            <li class="modal__menu-cat-item">
+                                Accessories
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                Bags
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                Denim
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                T-Shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="modal__menu-cat">
+                        <h4 class="modal__menu-cat-title">Kids</h4>
+                        <ul class="modal__menu-cat-list">
+                            <li class="modal__menu-cat-item">
+                                Accessories
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                Bags
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                Denim
+                            </li>
+                            <li class="modal__menu-cat-item">
+                                T-Shirts
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <section class="page-title">
+            <div class="container">
+                <h2 class="title">SHOPPING CART</h2>
+            </div>
+        </section>
+
+        <section class="cart container">
+            <div class="cart__items">
+                <ul class="cart__items-list">
+                    <li class="cart__list-item">
+                        <button class="cart__list-item-delete"><img src="./img/remove-item-btn.svg" alt="remove item"></button>
+                        <img src="./img/cart-item-1.jpg" alt="product-image" class="cart__list-item-img">
+                        <div class="cart__list-item-info">
+                            <h3 class="cart__list-item-title">MANGO PEOPLE T-SHIRT</h3>
+                            <ul class="cart__list-item-details">
+                                <li class="cart__list-item-text">Price: <strong>$300</strong></li>
+                                <li class="cart__list-item-text">Color: Red</li>
+                                <li class="cart__list-item-text">Size: XL</li>
+                                <li class="cart__list-item-text">Quantity: <input class="cart__quantity" type="text" value=2>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cart__list-item">
+                        <button class="cart__list-item-delete"><img src="./img/remove-item-btn.svg" alt="remove item"></button>
+                        <img src="./img/cart-item-2.jpg" alt="product-image" class="cart__list-item-img">
+                        <div class="cart__list-item-info">
+                            <h3 class="cart__list-item-title">MANGO PEOPLE T-SHIRT</h3>
+                            <ul class="cart__list-item-details">
+                                <li class="cart__list-item-text">Price: <strong>$300</strong></li>
+                                <li class="cart__list-item-text">Color: Red</li>
+                                <li class="cart__list-item-text">Size: XL</li>
+                                <li class="cart__list-item-text">Quantity: <input class="cart__quantity" type="text" value=2>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart__controls">
+                    <button class="cart__button">CLEAR SHOPPING CART</button>
+                    <button class="cart__button">CONTINUE SHOPPING</button>
+                </div>
+                </div>
+                                    <div class="cart__checkout">
+                                        <form action="" class="cart__form">
+                                            <input class="cart__form-input" type="text" placeholder="Bangladesh">
+                                            <input class="cart__form-input" type="text" placeholder="State">
+                                            <input class="cart__form-input" type="text" placeholder="Postcode/Zip">
+                                            <button class="cart__button">Get a quote</button>
+                                        </form>
+                                        <div class="cart__summary">
+                                            <p class="cart__sub-total">sub total: $900</p>
+                                            <p class="cart__grand-total">grand total: <strong>$900</strong></p>
+                                            <hr>
+                                            <button class="cart__submit">PROCEED TO CHECKOUT</button>
+
+                                        </div>
+                                    </div>
+        </section>
+
+        <footer class="footer">
+            <section class="subscribe">
+
+                <div class="container">
+                    <div class="subscribe__container">
+                        <article class="subscribe__review">
+                            <img class="subscribe__face" src="img/woman-face.png" alt="woman" width="96" height="96">
+                            <p class="subscribe__text">
+                                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+                                    condimentum</i>“
+                            </p>
+                        </article>
+                        <div class="subscribe__form-container">
+                            <div class="subscribe__form-title">
+                                <h3 class="subscribe__form-heading">SUBSCRIBE</h3>
+                                <p class="subscribe__form-subtitle">FOR OUR NEWSLETTER AND PROMOTION</p>
+                            </div>
+                            <form class="subscribe__form" id="subscribe" action="submit">
+                                <input class="subscribe__form-input" type="email" placeholder="Enter Your Email">
+                                <button class="subscribe__form-btn" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="credits">
+                <div class="credits__container container">
+                    <p class="copy">
+                        &copy 2021 Brand All Rights Reserved.
+                    </p>
+                    <ul class="socials">
+                        <li class="socials__icon"><a href=""><img src="img/facebook.svg" alt="facebook" width="32"
+                                    height="32"></a>
+                        </li>
+                        <li class="socials__icon"><a href=""><img src="img/instagram.svg" alt="instagram" width="32"
+                                    height="32"></a></li>
+                        <li class="socials__icon"><a href=""><img src="img/pinterest.svg" alt="pinterest" width="32"
+                                    height="32"></a></li>
+                        <li class="socials__icon"><a href=""><img src="img/twitter.svg" alt="twitter" width="32"
+                                    height="32"></a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+        <script src="./js/menu.js"></script>
+</body>
+
+</html>

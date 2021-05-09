@@ -4,11 +4,11 @@
   align-items: center;
 }
 
-@mixin flex-column-space-between(){
+@mixin flex-column-space-between() {
   display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin flex-center {
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-@mixin font($size: 14px, $height: 17px, $weight: 300, $style:normal) {
+@mixin font($size: 14px, $height: 17px, $weight: 300, $style: normal) {
   font-size: $size;
   line-height: $height;
   font-weight: $weight;

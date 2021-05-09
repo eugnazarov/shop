@@ -16,12 +16,12 @@ a:visited {
 
 .page-title {
   padding: 60px 0;
-  background: var(--lightpink-color);
+  background: $lightpink-color;
 }
 
 .title {
   text-transform: uppercase;
-  color: var(--lightred-color);
+  color: $lightred-color;
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
