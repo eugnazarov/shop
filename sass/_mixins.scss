@@ -23,3 +23,9 @@
   font-weight: $weight;
   font-style: $style;
 }
+
+@mixin tablet {
+  @media (max-width: $tablet-resolution) {
+    @content;
+  }
+}

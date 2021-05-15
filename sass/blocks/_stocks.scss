@@ -1,6 +1,4 @@
 .stocks {
-
-
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -8,13 +6,21 @@
   }
 
   &__item {
-    width: 360px;
+    flex-basis: 32%;
     min-height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
+    @include tablet {
+      & {
+        min-height: 167px;
+      }
+    }
   }
 
   &__item p {
@@ -45,10 +51,9 @@
   }
 
   &__item--accessories {
-    width: 100%;
+    flex-basis: 100%;
     background-image: url(../../img/accessoires.jpg);
     margin-top: 30px;
     /*accessories.jpg*/
   }
-
 }

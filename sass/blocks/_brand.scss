@@ -1,13 +1,14 @@
 .brand {
   display: flex;
-  justify-content: stretch;
-  height: 765px;
 
   &__heading-wrapper {
     background-color: $pink-color;
     padding: 0 0 0 92px;
     @include flex-center-space-between();
     width: 50%;
+    @include tablet {
+      padding: 0 0 0 68px;
+    }
   }
 
   &__image {
@@ -22,10 +23,21 @@
     text-transform: uppercase;
     border-left: 12px solid $lightred-color;
     padding-left: 16px;
+    @include tablet {
+      & {
+        @include font(44px, 52.8px, 900);
+      }
+    }
   }
 
   &__heading-text {
     @include font(37px, 44px, 700);
+    @include tablet {
+      & {
+        @include font(24px, 28.8px, 700);
+        text-align: right;
+      }
+    }
   }
 
   &__heading-text--pink {

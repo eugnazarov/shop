@@ -74,6 +74,12 @@ a:visited {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 765px;
+  }
+}
+
 .page-title {
   padding: 60px 0;
   background: #f8f3f4;
@@ -119,6 +125,12 @@ a:visited {
 
 .content {
   padding-top: 65px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 18px;
+  }
 }
 
 .heading {
@@ -182,10 +194,6 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  height: 765px;
 }
 
 .brand__heading-wrapper {
@@ -203,6 +211,12 @@ a:visited {
   width: 50%;
 }
 
+@media (max-width: 768px) {
+  .brand__heading-wrapper {
+    padding: 0 0 0 68px;
+  }
+}
+
 .brand__image {
   width: 50%;
   height: auto;
@@ -217,11 +231,30 @@ a:visited {
   padding-left: 16px;
 }
 
+@media (max-width: 768px) {
+  .brand__heading {
+    font-size: 44px;
+    line-height: 52.8px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
 .brand__heading-text {
   font-size: 37px;
   line-height: 44px;
   font-weight: 700;
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .brand__heading-text {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: right;
+  }
 }
 
 .brand__heading-text--pink {
@@ -349,7 +382,8 @@ a:visited {
 }
 
 .stocks__item {
-  width: 360px;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
   min-height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,6 +395,15 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .stocks__item {
+    min-height: 167px;
+  }
 }
 
 .stocks__item p {
@@ -397,7 +440,8 @@ a:visited {
 }
 
 .stocks__item--accessories {
-  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   background-image: url(../../img/accessoires.jpg);
   margin-top: 30px;
   /*accessories.jpg*/
