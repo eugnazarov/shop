@@ -1,0 +1,73 @@
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+
+    &__features {
+        width: 650px;
+    }
+
+    &__features-title {
+        font-weight: normal;
+        margin-bottom: 22px;
+    }
+
+    &__form {
+        margin-right: 128px;
+    }
+
+    &__fieldset {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__fieldset h4 {
+        font-weight: normal;
+    }
+
+    &__fieldset input {
+        width: 360px;
+        padding: 16px;
+    }
+
+    &__features-subtitle {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        width: 100%;
+    }
+
+    &__features-list {
+        margin-top: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__features-item:before {
+        margin-right: 23px;
+        content: url(../img/feature-icon.svg);
+    }
+
+    &__sex {
+        margin: 31px 0;
+    }
+    &__fieldset-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--flat-color);
+    }
+}
