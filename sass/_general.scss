@@ -13,6 +13,12 @@ a:visited {
   padding: 0 15px;
   margin: 0 auto;
 
+  @include mobile {
+    & {
+      min-width: 343px;
+    }
+  }
+
   @include tablet {
     & {
       max-width: 765px;

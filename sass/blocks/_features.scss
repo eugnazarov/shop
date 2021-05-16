@@ -4,8 +4,20 @@
     padding-top: 103px;
     padding-bottom: 103px;
 
+    @include mobile {
+        & {
+            padding-top: 48px;
+            padding-bottom: 81px;
+        }
+    }
+
     &__list {
         display: flex;
+        @include mobile {
+            & {
+                @include flex-column-space-between;
+            }
+        }
     }
 
     &__item {
@@ -13,6 +25,14 @@
         width: 360px;
         height: 134px;
         text-align: center;
+        @include mobile {
+            & {
+                margin-bottom: 46px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__item-heading {
