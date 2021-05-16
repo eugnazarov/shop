@@ -9,19 +9,19 @@ a:visited {
   color: $white-color;
 }
 .container {
-  max-width: 1170px;
-  padding: 0 15px;
+  max-width: 1140px;
   margin: 0 auto;
+
+  @include tablet {
+    & {
+      max-width: 734px;
+    }
+  }
 
   @include mobile {
     & {
       max-width: 343px;
-    }
-  }
-
-  @include tablet {
-    & {
-      max-width: 765px;
+      margin: 0 auto;
     }
   }
 }
@@ -29,6 +29,12 @@ a:visited {
 .page-title {
   padding: 60px 0;
   background: $lightpink-color;
+
+  @include mobile {
+    & {
+      text-align: center;
+    }
+  }
 }
 
 .title {

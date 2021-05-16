@@ -54,22 +54,22 @@
   }
 
   &__item--woman {
-    background-image: url(../../img/woman.jpg);
+    background-image: url(../img/woman.jpg);
   }
 
   &__item--man {
-    background-image: url(../../img/men.jpg);
+    background-image: url(../img/men.jpg);
     /*man.jpg*/
   }
 
   &__item--kids {
-    background-image: url(../../img/kids.jpg);
+    background-image: url(../img/kids.jpg);
     /*kids.jpg*/
   }
 
   &__item--accessories {
     flex-basis: 100%;
-    background-image: url(../../img/accessoires.jpg);
+    background-image: url(../img/accessoires.jpg);
     margin-top: 30px;
     /*accessories.jpg*/
   }
