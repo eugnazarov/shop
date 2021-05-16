@@ -9,14 +9,32 @@ a:visited {
   color: $white-color;
 }
 .container {
-  max-width: 1170px;
-  padding: 0 15px;
+  max-width: 1140px;
   margin: 0 auto;
+
+  @include tablet {
+    & {
+      max-width: 734px;
+    }
+  }
+
+  @include mobile {
+    & {
+      max-width: 343px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .page-title {
   padding: 60px 0;
   background: $lightpink-color;
+
+  @include mobile {
+    & {
+      text-align: center;
+    }
+  }
 }
 
 .title {
@@ -59,6 +77,16 @@ a:visited {
 
 .content {
   padding-top: 65px;
+  @include tablet {
+    & {
+      padding-top: 18px;
+    }
+  }
+  @include mobile {
+    & {
+      padding-top: 64px;
+    }
+  }
 }
 
 .heading {
