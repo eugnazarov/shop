@@ -3,6 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include mobile {
+      & {
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+    }
   }
 
   &__item {
@@ -16,9 +23,15 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @include mobile {
+      & {
+        height: 247px;
+      }
+    }
+
     @include tablet {
       & {
-        min-height: 167px;
+        height: 167px;
       }
     }
   }
