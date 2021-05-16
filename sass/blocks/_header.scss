@@ -18,6 +18,12 @@
 
   &__link {
     margin: 0 0 0 33px;
+
+    @include mobile {
+      & {
+        display: none;
+      }
+    }
   }
 
   &__navigation {

@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-@mixin flex-column-space-between() {
+@mixin flex-column-space-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,13 +25,13 @@
 }
 
 @mixin tablet {
-  @media (max-width: $tablet-resolution) and (min-width: $mobile-resolution) {
+  @media (min-width: 768px) and (max-width: 1400px) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media (max-width: $mobile-resolution) {
+  @media (max-width: $tablet-resolution) {
     @content;
   }
 }

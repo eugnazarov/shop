@@ -23,15 +23,19 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include mobile {
-      & {
-        height: 247px;
-      }
-    }
-
     @include tablet {
       & {
         height: 167px;
+      }
+    }
+    @include mobile {
+      & {
+        height: 247px;
+        margin-bottom: 32px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

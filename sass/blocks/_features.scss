@@ -11,8 +11,20 @@
         }
     }
 
+    @include tablet {
+        & {
+            padding-top: 48px;
+            padding-bottom: 64px;
+        }
+    }
+
     &__list {
         display: flex;
+        @include tablet {
+            & {
+                @include flex-column-space-between;
+            }
+        }
         @include mobile {
             & {
                 @include flex-column-space-between;
@@ -22,12 +34,22 @@
 
     &__item {
         @include flex-column-space-between;
-        width: 360px;
-        height: 134px;
+        width: 33.333%;
+        min-height: 134px;
         text-align: center;
         @include mobile {
             & {
                 margin-bottom: 46px;
+                width: 100%;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include tablet {
+            & {
+                margin-bottom: 48px;
             }
             &:last-child {
                 margin-bottom: 0;

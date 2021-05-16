@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    height: 764px;
+    height: 760px;
     width: 100%;
     top: 0;
     left: 0;
@@ -22,6 +22,12 @@
         padding-top: 37px;
         padding-left: 34px;
         position: relative;
+
+        @include mobile {
+            & {
+                flex-basis: 100%;
+            }
+        }
     }
 
     &__menu-exit-btn {
@@ -41,6 +47,10 @@
     &__menu-list {
         display: flex;
         flex-direction: column;
+        @include mobile {
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__menu-cat {

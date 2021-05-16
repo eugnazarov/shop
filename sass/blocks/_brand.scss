@@ -1,18 +1,26 @@
 .brand {
   display: flex;
 
+  @include mobile {
+    & {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
   &__heading-wrapper {
     background-color: $pink-color;
     padding: 0 0 0 92px;
     width: 50%;
-    @include flex-center-space-between();
+    @include flex-center-space-between;
     @include tablet {
-      padding: 0 0 0 68px;
+      padding: 0 0 0 68.21px;
     }
     @include mobile {
       & {
         width: 100%;
         height: 363px;
+        justify-content: center;
         align-items: center;
         padding: 0 56px;
       }
@@ -31,9 +39,7 @@
   }
 
   &__heading {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
+    @include font(48px, 58px, 900);
     text-transform: uppercase;
     border-left: 12px solid $lightred-color;
     padding-left: 16px;
