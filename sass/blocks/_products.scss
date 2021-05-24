@@ -14,9 +14,7 @@
         left: 0;
 
         @include mobile {
-            & {
-                display: none;
-            }
+            display: none;
         }
     }
 
@@ -105,9 +103,7 @@
         margin-bottom: 30px;
 
         @include mobile {
-            & {
-                width: 100%;
-            }
+            width: 100%;
         }
     }
 }

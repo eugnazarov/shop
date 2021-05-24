@@ -17,13 +17,11 @@
       padding: 0 0 0 68.21px;
     }
     @include mobile {
-      & {
-        width: 100%;
-        height: 363px;
-        justify-content: center;
-        align-items: center;
-        padding: 0 56px;
-      }
+      width: 100%;
+      height: 363px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 56px;
     }
   }
 
@@ -32,9 +30,7 @@
     height: auto;
 
     @include mobile {
-      & {
-        display: none;
-      }
+      display: none;
     }
   }
 
@@ -44,30 +40,22 @@
     border-left: 12px solid $lightred-color;
     padding-left: 16px;
     @include tablet {
-      & {
-        @include font(44px, 52.8px, 900);
-      }
+      @include font(44px, 52.8px, 900);
     }
     @include mobile {
-      & {
-        @include font(38px, 45.6px, 900);
-      }
+      @include font(38px, 45.6px, 900);
     }
   }
 
   &__heading-text {
     @include font(37px, 44px, 700);
     @include tablet {
-      & {
-        @include font(24px, 28.8px, 700);
-        text-align: right;
-      }
+      @include font(24px, 28.8px, 700);
+      text-align: right;
     }
     @include mobile {
-      & {
-        @include font(20px, 24px, 700);
-        text-align: right;
-      }
+      @include font(20px, 24px, 700);
+      text-align: right;
     }
   }
 

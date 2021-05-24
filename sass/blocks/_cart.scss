@@ -24,15 +24,11 @@
         flex-direction: column;
         margin-bottom: 72px;
         @include mobile {
-            & {
-                margin-bottom: 30px;
-            }
+            margin-bottom: 30px;
         }
 
         @include mobile {
-            & {
-                margin-bottom: 62px;
-            }
+            margin-bottom: 62px;
         }
     }
 
@@ -44,9 +40,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-bottom: 40px;
         @include mobile {
-            & {
-                width: 100%;
-            }
+            width: 100%;
         }
     }
 
@@ -57,12 +51,10 @@
         padding-bottom: 62px;
 
         @include mobile {
-            & {
-                padding-top: 13px;
-                padding-left: 17px;
-                padding-right: 53px;
-                padding-bottom: 38px;
-            }
+            padding-top: 13px;
+            padding-left: 17px;
+            padding-right: 53px;
+            padding-bottom: 38px;
         }
     }
 
@@ -85,11 +77,9 @@
         line-height: 29px;
         font-weight: normal;
         @include mobile {
-            & {
-                margin-bottom: 25px;
-                font-size: 16px;
-                line-height: 19px;
-            }
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 19px;
         }
     }
 
@@ -102,10 +92,8 @@
         cursor: pointer;
 
         @include mobile {
-            & {
-                top: 17px;
-                right: 12px;
-            }
+            top: 17px;
+            right: 12px;
         }
     }
     &__quantity {
@@ -116,10 +104,8 @@
         width: 2ch;
         margin-left: 24px;
         @include mobile {
-            & {
-                margin-left: 0px;
-                padding: 0 9px;
-            }
+            margin-left: 0px;
+            padding: 0 9px;
         }
     }
 
@@ -128,17 +114,13 @@
         width: 100%;
 
         @include tablet {
-            & {
-                justify-content: space-around;
-                margin-bottom: 104px;
-            }
+            justify-content: space-around;
+            margin-bottom: 104px;
         }
 
         @include mobile {
-            & {
-                justify-content: space-around;
-                margin-bottom: 104px;
-            }
+            justify-content: space-around;
+            margin-bottom: 104px;
         }
     }
 
@@ -150,10 +132,8 @@
         padding: 16px 40px;
         cursor: pointer;
         @include mobile {
-            & {
-                padding: 9px 14px;
-                @include font(12px, 14px);
-            }
+            padding: 9px 14px;
+            @include font(12px, 14px);
         }
     }
 
@@ -164,20 +144,16 @@
         flex-direction: column;
         align-items: flex-start;
         @include mobile {
-            & {
-                flex-basis: 100%;
-                align-items: center;
-                margin-left: 0;
-            }
+            flex-basis: 100%;
+            align-items: center;
+            margin-left: 0;
         }
 
         @include tablet {
-            & {
-                margin-left: 0;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
+            margin-left: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -186,14 +162,10 @@
         align-items: flex-start;
         width: 100%;
         @include tablet {
-            & {
-                flex: 60%;
-            }
+            flex: 60%;
         }
         @include mobile {
-            & {
-                flex: 100%;
-            }
+            flex: 100%;
         }
     }
 
@@ -204,9 +176,7 @@
         padding-bottom: 14px;
         width: 80%;
         @include mobile {
-            & {
-                width: 90%;
-            }
+            width: 90%;
         }
     }
 
@@ -215,10 +185,8 @@
         background: #f5f3f3;
         padding: 45px;
         @include tablet {
-            & {
-                flex: 50%;
-                margin-top: 0;
-            }
+            flex: 50%;
+            margin-top: 0;
         }
     }
 
