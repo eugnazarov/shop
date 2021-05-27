@@ -4,44 +4,82 @@
     display: flex;
     justify-content: flex-start;
 
+    @include mobile {
+        & {
+            flex-direction: column;
+        }
+    }
+
+    @include tablet {
+        & {
+            flex-direction: column;
+        }
+    }
+
     &__items {
-        @include flex-column-space-between();
     }
 
     &__items-list {
-        @include flex-column-space-between();
-        flex-basis: 652px;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 72px;
+        @include mobile {
+            margin-bottom: 30px;
+        }
+
+        @include mobile {
+            margin-bottom: 62px;
+        }
     }
 
     &__list-item {
+        width: 100%;
         position: relative;
-        margin-bottom: 40px;
-        @include flex-center-space-between();
+        display: flex;
+        justify-content: space-between;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    &__list-item-img {
+        margin-bottom: 40px;
+        @include mobile {
+            width: 100%;
+        }
     }
 
     &__list-item-info {
+        padding-top: 22px;
         padding-left: 31px;
-        padding-right: 97px;
+        padding-right: 167px;
+        padding-bottom: 62px;
+
+        @include mobile {
+            padding-top: 13px;
+            padding-left: 17px;
+            padding-right: 53px;
+            padding-bottom: 38px;
+        }
+    }
+
+    &__list-item-img {
+        width: 40%;
+        height: auto;
     }
 
     &__list-item-text {
-        @include font(22px, 26px, normal);
-        margin-bottom: 6px;
-    }
-    &__list-item-title {
-        color: $black-color;
-        @include font(24px, 29px, normal);
-        margin-bottom: 42px;
+        font-size: 22px;
+        line-height: 26px;
+        strong {
+            color: $lightred-color;
+        }
     }
 
-    &__list-item-details {
-        & strong {
-            color: $brightpink-color;
+    &__list-item-title {
+        margin-bottom: 42px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: normal;
+        @include mobile {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 19px;
         }
     }
 
@@ -52,19 +90,38 @@
         background: none;
         border: none;
         cursor: pointer;
+
+        @include mobile {
+            top: 17px;
+            right: 12px;
+        }
     }
     &__quantity {
         padding: 0 16px;
         border: 1px solid $input-border-color;
         text-align: center;
         @include font(18px, 22px);
-        width: 1ch;
+        width: 2ch;
         margin-left: 24px;
+        @include mobile {
+            margin-left: 0px;
+            padding: 0 9px;
+        }
     }
 
     &__controls {
         @include flex-center-space-between();
         width: 100%;
+
+        @include tablet {
+            justify-content: space-around;
+            margin-bottom: 104px;
+        }
+
+        @include mobile {
+            justify-content: space-around;
+            margin-bottom: 104px;
+        }
     }
 
     &__button {
@@ -74,6 +131,10 @@
         @include font(14px, 17px);
         padding: 16px 40px;
         cursor: pointer;
+        @include mobile {
+            padding: 9px 14px;
+            @include font(12px, 14px);
+        }
     }
 
     &__checkout {
@@ -82,11 +143,30 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        @include mobile {
+            flex-basis: 100%;
+            align-items: center;
+            margin-left: 0;
+        }
+
+        @include tablet {
+            margin-left: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__form {
         @include flex-column-space-between;
         align-items: flex-start;
+        width: 100%;
+        @include tablet {
+            flex: 60%;
+        }
+        @include mobile {
+            flex: 100%;
+        }
     }
 
     &__form-input {
@@ -94,14 +174,20 @@
         padding-left: 17px;
         padding-top: 14px;
         padding-bottom: 14px;
-        width: 350px;
+        width: 80%;
+        @include mobile {
+            width: 90%;
+        }
     }
 
     &__summary {
         margin-top: 57px;
         background: #f5f3f3;
-
         padding: 45px;
+        @include tablet {
+            flex: 50%;
+            margin-top: 0;
+        }
     }
 
     &__submit {
@@ -116,6 +202,10 @@
         padding: 15px 43px;
     }
 
+    &__checkout-legend {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
     &__sub-total,
     &__grand-total {
         text-align: right;
